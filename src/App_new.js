@@ -5,10 +5,11 @@ import { NotificationProvider } from './contexts/NotificationContext';
 import NotificationBar from './components/common/NotificationBar';
 import LoginForm from './components/auth/LoginForm';
 import ApartmentSelection from './components/dashboard/ApartmentSelection';
-import ApartmentDashboard from './components/dashboard/ApartmentDashboard';
-import UnitManagement from './components/units/UnitManagement';
-import TenantManagement from './components/tenants/TenantManagement';
-import Reports from './components/reports/Reports';
+// Import other components as we create them
+// import ApartmentDashboard from './components/dashboard/ApartmentDashboard';
+// import UnitManagement from './components/units/UnitManagement';
+// import TenantManagement from './components/tenants/TenantManagement';
+// import Reports from './components/reports/Reports';
 
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
@@ -43,6 +44,8 @@ function AppRoutes() {
             </ProtectedRoute>
           } 
         />
+        {/* Add more routes as we create components */}
+        {/* 
         <Route 
           path="/apartment/:id/dashboard" 
           element={
@@ -75,6 +78,7 @@ function AppRoutes() {
             </ProtectedRoute>
           } 
         />
+        */}
         <Route path="/" element={<Navigate to="/dashboard" />} />
       </Routes>
     </div>
